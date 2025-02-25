@@ -12,14 +12,14 @@
 </head>
 <body>
     
-    <div class="container-fluid bg-primary text-white text-center p-5">
+    <div class="container-fluid bg-dark text-white text-center p-5">
         <h1>Projeto SW2</h1>
         <p>
             Elaborado por Guilherme Henrique de Souza
         </p>
     </div>
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
 
             <div class="col-sm-4"> 
@@ -50,11 +50,19 @@
         <div class="row">
 
             <div class="col-sm-6">
-                <h1>Produtos</h1>
+                <h1 class="bg-warning">Produtos</h1>
+                <p class="text-warning">
+                    Utilize esta opção para cadastrar os produtos
+                    que serão vendidos no site.
+                </p>
             </div>
 
             <div class="col-sm-6">
-                <h1>Vendas</h1>
+                <h1 class="bg-secondary">Vendas</h1>
+                <p class="text-secondary">
+                    Utilize esta opção para visualizar as Vendas
+                    realizadas pelos clientes.
+                </p>
             </div>
         </div>
 
