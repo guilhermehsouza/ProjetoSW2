@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 18-Mar-2025 às 13:25
+-- Tempo de geração: 25-Mar-2025 às 13:48
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -35,6 +35,39 @@ CREATE TABLE IF NOT EXISTS `administrador` (
   `nome` varchar(200) NOT NULL,
   `login` varchar(200) NOT NULL,
   `senha` varchar(200) NOT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Extraindo dados da tabela `administrador`
+--
+
+INSERT INTO `administrador` (`codigo`, `nome`, `login`, `senha`) VALUES
+(1, 'Guilherme Henrique de Souza', 'guilherme', 'e10adc3949ba59abbe56e057f20f883e');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `categoria`
+--
+
+DROP TABLE IF EXISTS `categoria`;
+CREATE TABLE IF NOT EXISTS `categoria` (
+  `codigo` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `fornecedor`
+--
+
+DROP TABLE IF EXISTS `fornecedor`;
+CREATE TABLE IF NOT EXISTS `fornecedor` (
+  `codigo` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
   PRIMARY KEY (`codigo`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 COMMIT;
