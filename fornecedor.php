@@ -18,11 +18,11 @@
             <div class="col-sm-8 mx-auto mt-3 border border-success">
                 <h3 class="text-center">Preencha os dados abaixo</h3>
 
-                <form action="#">
+                <form action="fornecedor_cadastro.php">
 
                     <p>
                             Digite a Fornecedor<br>
-                            <input type="text" name="fornecedor" class="form-control" />
+                            <input type="text" name="nome" class="form-control" />
                     </p>
                      
 

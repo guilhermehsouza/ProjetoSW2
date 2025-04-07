@@ -18,16 +18,16 @@
             <div class="col-sm-8 mx-auto mt-3 border border-danger">
                 <h3 class="text-center">Preencha os dados abaixo</h3>
 
-                <form action="#">
+                <form action="categoria_cadastro.php">
 
                     <p>
                             Digite a Categoria<br>
-                            <input type="text" name="categoria" class="form-control" />
+                            <input type="text" name="nome" class="form-control" />
                     </p>
                      
 
                        <p>
-                            <input type="submit" value="Cadastrar" class="btn btn-success" />
+                            <input type="submit" value="Cadastrar" class="btn btn-danger" />
                             <input type="reset" value="Limpar" class="btn btn-warning"/> 
                             <a href="index.php" class="btn btn-secondary">Voltar</a>
                        </p>
