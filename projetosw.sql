@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 07-Abr-2025 às 17:53
+-- Tempo de geração: 08-Abr-2025 às 10:46
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -79,7 +79,15 @@ CREATE TABLE IF NOT EXISTS `formapagamento` (
   `codigo` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(200) NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Extraindo dados da tabela `formapagamento`
+--
+
+INSERT INTO `formapagamento` (`codigo`, `nome`) VALUES
+(1, 'PIX'),
+(2, 'Cartão de Crédito');
 
 -- --------------------------------------------------------
 
@@ -101,6 +109,34 @@ CREATE TABLE IF NOT EXISTS `fornecedor` (
 INSERT INTO `fornecedor` (`codigo`, `nome`) VALUES
 (1, 'Samsung'),
 (2, 'Motorola');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `produto`
+--
+
+DROP TABLE IF EXISTS `produto`;
+CREATE TABLE IF NOT EXISTS `produto` (
+  `codigo` int NOT NULL AUTO_INCREMENT,
+  `descricao` varchar(200) NOT NULL,
+  `precocusto` float(10,2) NOT NULL,
+  `precovenda` float(10,2) NOT NULL,
+  `codcategoria` int NOT NULL,
+  `codfornecedor` int NOT NULL,
+  `imagem1` varchar(200) NOT NULL,
+  `imagem2` varchar(200) NOT NULL,
+  `imagem3` varchar(200) NOT NULL,
+  PRIMARY KEY (`codigo`)
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Extraindo dados da tabela `produto`
+--
+
+INSERT INTO `produto` (`codigo`, `descricao`, `precocusto`, `precovenda`, `codcategoria`, `codfornecedor`, `imagem1`, `imagem2`, `imagem3`) VALUES
+(1, 'Celular Samsung S25 Plus', 2500.00, 5000.00, 1, 1, '', '', ''),
+(2, 'Celular Samsung S25 Plus', 2500.00, 5000.00, 1, 1, '', '', '');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
