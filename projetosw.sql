@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 08-Abr-2025 às 10:46
+-- Tempo de geração: 15-Abr-2025 às 10:59
 -- Versão do servidor: 8.0.31
 -- versão do PHP: 8.0.26
 
@@ -36,7 +36,7 @@ CREATE TABLE IF NOT EXISTS `administrador` (
   `login` varchar(200) NOT NULL,
   `senha` varchar(200) NOT NULL,
   PRIMARY KEY (`codigo`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `administrador`
@@ -44,7 +44,11 @@ CREATE TABLE IF NOT EXISTS `administrador` (
 
 INSERT INTO `administrador` (`codigo`, `nome`, `login`, `senha`) VALUES
 (1, 'Guilherme Henrique de Souza', 'guilherme', 'e10adc3949ba59abbe56e057f20f883e'),
-(2, 'Jaqueline Ferreira Domenciano', 'jaqueline', 'f6b97114ac53b8556d46fe84c9ee9d8d');
+(2, 'Jaqueline Ferreira Domenciano', 'jaqueline', 'f6b97114ac53b8556d46fe84c9ee9d8d'),
+(3, 'Felipe Gabriel', 'felipe', '7e04da88cbb8cc933c7b89fbfe121cca'),
+(4, 'João Gabriel', 'joaogabriel', '202cb962ac59075b964b07152d234b70'),
+(5, 'Larissa Lipper', 'larissa', '202cb962ac59075b964b07152d234b70'),
+(6, 'Juan Ribeiro', 'juan', '202cb962ac59075b964b07152d234b70');
 
 -- --------------------------------------------------------
 

@@ -29,7 +29,8 @@
                     de novos administradores, ou edita-los.
                 </p>
                 <p>
-                    <a href="administrador.php" class="btn btn-primary">Clique</a>
+                    <a href="administrador.php" class="btn btn-primary">Cadastro</a>
+                    <a href="administrador_pesquisa.php" class="btn btn-primary">Pesquisa</a>
                 </p>
             </div>
 
@@ -41,6 +42,7 @@
                 </p>
                 <p>
                     <a href="categoria.php" class="btn btn-danger">Clique</a>
+                    <a href="categoria_pesquisa.php" class="btn btn-primary">Pesquisa</a>
                 </p>
             </div>
 
@@ -76,6 +78,21 @@
                     realizadas pelos clientes.
                 </p>
             </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-sm-4"> 
+                <h1 class="bg-secondary text-white">Forma Pagamento</h1>
+                <p class="text-secondary">
+                    Utilize esta opção para realizar o cadastro
+                    das formas de pagamento, ou edita-los.
+                </p>
+                <p>
+                    <a href="administrador.php" class="btn btn-secondary">Clique</a>
+                </p>
+            </div>
+
         </div>
 
     </div>
