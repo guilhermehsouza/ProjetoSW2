@@ -9,8 +9,8 @@
 </head>
 <body>    
 
-    <div class="bg-danger text-white p-3 text-center">
-        <h1>Pesquisa de Categorias</h1>
+    <div class="bg-success text-white p-3 text-center">
+        <h1>Pesquisa de Fornecedores</h1>
     </div>
 
     <div class="container">
@@ -24,7 +24,7 @@
                     <?php
                         include "conexao.php";
 
-                        $sql = "select * from categoria";
+                        $sql = "select * from fornecedor";
 
                         $result = $conexao->prepare($sql);
                         $result->execute();
@@ -42,7 +42,7 @@
                 </table>
 
                 <p>
-                    <a href="index.php" class="btn btn-danger">Voltar</a>
+                    <a href="index.php" class="btn btn-success">Voltar</a>
                 </p>
 
             </div>

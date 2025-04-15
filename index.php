@@ -41,8 +41,8 @@
                     dos produtos que serão vendidos on-line.
                 </p>
                 <p>
-                    <a href="categoria.php" class="btn btn-danger">Clique</a>
-                    <a href="categoria_pesquisa.php" class="btn btn-primary">Pesquisa</a>
+                    <a href="categoria.php" class="btn btn-danger">Cadastro</a>
+                    <a href="categoria_pesquisa.php" class="btn btn-danger">Pesquisa</a>
                 </p>
             </div>
 
@@ -53,7 +53,8 @@
                     dos produtos que serão vendidos on-line.
                 </p>
                 <p>
-                    <a href="fornecedor.php" class="btn btn-success">Clique</a>
+                    <a href="fornecedor.php" class="btn btn-success">Cadastro</a>
+                    <a href="fornecedor_pesquisa.php" class="btn btn-success">Pesquisa</a>
                 </p>
             </div>
         </div>
@@ -68,6 +69,7 @@
                 </p>
                 <p>
                     <a href="produto.php" class="btn btn-warning">Clique</a>
+                    <a href="produto_pesquisa.php" class="btn btn-warning">Pesquisa</a>
                 </p>
             </div>
 
@@ -89,7 +91,8 @@
                     das formas de pagamento, ou edita-los.
                 </p>
                 <p>
-                    <a href="administrador.php" class="btn btn-secondary">Clique</a>
+                    <a href="formapagamento.php" class="btn btn-secondary">Cadastro</a>
+                    <a href="formapagamento_pesquisa.php" class="btn btn-secondary">Pesquisa</a>
                 </p>
             </div>
 
