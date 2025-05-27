@@ -15,7 +15,11 @@
 
     if ( $linha = $result->fetch(PDO::FETCH_ASSOC) )
     {
-        echo "Login realizado com sucesso !";
+        //echo "Login realizado com sucesso !";
+        session_start();
+        $_SESSION["nome"] = $linha["nome"];
+
+        header("location: index.php");
     }
     else
     {
@@ -23,7 +27,7 @@
         $_SESSION["erro"] = "Login e Senha incorretos !";
 
         header("location: login.php");
-    }
+    } 
 
 
 
