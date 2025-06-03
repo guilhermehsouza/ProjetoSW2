@@ -1,3 +1,13 @@
+<?php
+
+    session_start();
+
+    if ( !isset($_SESSION["nome"]) )
+    {
+        header("location: login.php");
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +21,8 @@
 
 </head>
 <body>
+
+    <?php include "menu.php" ?>
     
     <div class="container-fluid bg-dark text-white text-center p-5">
         <h1>Projeto SW2</h1>
